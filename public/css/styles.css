@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(107, 28, 28, 0.322);
+}
+
+form.box {
+    width: 60%;
+    border: solid .5px rgb(202, 202, 202);
+    border-radius: 10px;
+}

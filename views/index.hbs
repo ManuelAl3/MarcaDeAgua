@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca de agua para videos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+    <h1>Aplicación para insertar marcas de agua en videos</h1>
+
+    {{# if error}}
+    <div class="ui negative message">
+        <i class="close icon"></i>
+        <div class="header">
+            {{ error }}
+        </div>
+    </div>
+    {{/if}}
+
+    <form action="/upload-video" method="POST" enctype="multipart/form-data" class="ui form box">
+        <div class="field">
+            <label for="">Sube tu video aquí</label>
+            <input type="file" name="ssvideo" accept="video/*">
+        </div>
+        <button class="ui button">Subir video</button>
+    </form>
+
+</body>
+</html>
